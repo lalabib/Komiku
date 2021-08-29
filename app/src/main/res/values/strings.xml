@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Komiku</string>
+    <string name="profile">Profile</string>
+    <string name="name">Labib Hibatullah</string>
+    <string name="email">labibla21@gmail.com</string>
+    <string name="place">Jakarta, Indonesia</string>
+    <string name="anime_list">Nama Anime</string>
+    <string name="anime_genre">Genre Anime</string>
+    <string name="anime_sinopsis">Sinopsis</string>
+</resources>
