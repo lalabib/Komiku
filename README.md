@@ -1,5 +1,5 @@
 # Komiku
-Android App.
+Android App Beginner.
 
 # Screenshot
 <img src="https://user-images.githubusercontent.com/57593172/131351762-8c9e799c-483b-44ea-827b-290c05cea6c1.png"
