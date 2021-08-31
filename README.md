@@ -1,5 +1,5 @@
 # Komiku
-Android App Beginner.
+Komiku is Android App Beginner. 
 
 
 ## Author
