@@ -23,8 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val actionbar = supportActionBar
-        actionbar!!.title= "Anime"
+        supportActionBar?.title = "Anime"
 
         rvAnime = findViewById(R.id.rv_anime)
         rvAnime.setHasFixedSize(true)
