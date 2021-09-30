@@ -16,6 +16,7 @@
             android:id="@+id/tv_pict_anime"
             android:layout_width="match_parent"
             android:layout_height="260dp"
+            android:contentDescription="img Anime"
             android:scaleType="centerCrop"/>
 
         <LinearLayout
