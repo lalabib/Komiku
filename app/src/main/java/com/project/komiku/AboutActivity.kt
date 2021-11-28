@@ -11,9 +11,9 @@ class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
-        val actionbar = supportActionBar
-        actionbar!!.title = "About"
-        actionbar.setDisplayHomeAsUpEnabled(true)
+        
+        supportActionBar?.title = "About"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val photoProfile: ImageView = findViewById(R.id.photoProfile)
         val photo = R.drawable.photo_profile
@@ -27,5 +27,4 @@ class AboutActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
-
 }
