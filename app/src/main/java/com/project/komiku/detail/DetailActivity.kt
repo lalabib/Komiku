@@ -11,20 +11,12 @@ import com.project.komiku.R
 
 class DetailActivity : AppCompatActivity() {
 
-    companion object {
-        const val EXTRA_PHOTO = "extra_photo"
-        const val EXTRA_NAME = "extra_name"
-        const val EXTRA_GENRE = "extra_genre"
-        const val EXTRA_SINOPSIS = "extra_sinopsis"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_activity)
         val actionbar = supportActionBar
         actionbar!!.title="Detail Anime"
         actionbar.setDisplayHomeAsUpEnabled(true)
-
 
         val tvPhoto: ImageView = findViewById(R.id.tv_pict_anime)
         val tvName: TextView = findViewById(R.id.tv_anime_name)
@@ -46,9 +38,15 @@ class DetailActivity : AppCompatActivity() {
 
     }
 
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+    
+        companion object {
+        const val EXTRA_PHOTO = "extra_photo"
+        const val EXTRA_NAME = "extra_name"
+        const val EXTRA_GENRE = "extra_genre"
+        const val EXTRA_SINOPSIS = "extra_sinopsis"
     }
 }
