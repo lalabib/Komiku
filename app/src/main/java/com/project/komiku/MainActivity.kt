@@ -10,14 +10,12 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-
-
 class MainActivity : AppCompatActivity() {
     private var doubleBackToExitPressedOnce: Boolean = false
 
     private lateinit var rvAnime: RecyclerView
     private var list: ArrayList<Anime> = arrayListOf()
-
+    private lateinit var back:Long = 2000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
         this.doubleBackToExitPressedOnce = true
         Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show()
-        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
+        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, back)
     }
 
 }
