@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var rvAnime: RecyclerView
     private var list: ArrayList<Anime> = arrayListOf()
-    private lateinit var back:Long = 2000
+    private val back:Long = 2000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
