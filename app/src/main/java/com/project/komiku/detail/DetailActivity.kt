@@ -11,11 +11,13 @@ import com.project.komiku.R
 
 class DetailActivity : AppCompatActivity() {
 
+    private val title = "Detail Anime"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_activity)
         val actionbar = supportActionBar
-        actionbar!!.title="Detail Anime"
+        actionbar!!.title= title
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val tvPhoto: ImageView = findViewById(R.id.tv_pict_anime)
